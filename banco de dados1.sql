@@ -45,29 +45,4 @@ VALUES
 (2,"Walney"),
 (3,"Cefras");
 
-ALTER TABLE professor
-ADD CONSTRAINT fk_disciplina_professor
-FOREIGN KEY (id_disciplina)
-REFERENCES disciplina (id_disciplina);
-
-ALTER TABLE aluno
-ADD telefone VARCHAR(100);
-
-
-SELECT * FROM professor;
-UPDATE professor
-SET id_disciplina = 1 Where id_prof = 2;
-SELECT * FROM curso;
-SELECT * FROM disciplina;
-
-UPDATE aluno SET telefone = "(21) 98765-4321" WHERE id_aluno = 3;
-UPDATE aluno SET telefone = "(83) 3000-0000" WHERE id_aluno = 1;
-UPDATE aluno SET telefone = "(11) 2345-6789" WHERE id_aluno = 2;
-
-
-SELECT * FROM aluno;
-DROP TABLE aluno;
-
-
-
 
